@@ -44,37 +44,63 @@ const DOGS = [
 ]
 
 const container = document.getElementById('container')
-const brownBtn = document.getElementById('brown-btn')
-const blackBtn = document.getElementById('black-btn')
-const filterDropdown = document.getElementById('filterDropdown')
 
 const loadDogs = (dogsArray) => {
-  container.innerHTML = '' //resets the container before we load the dogs
-
   dogsArray.forEach(dog => {
-    container.innerHTML += `<div class="card">
-      <p>${dog.name}</p>
-      <img src=${dog.img} alt=${dog.name} />
-      <p>${dog.fur}</p>
-      <p>${dog.puppy ? '🐶' : ''}</p>
+    container.innerHTML +=
+      `<div class="card">
+    <p>${dog.name}</p>
+    <img src=${dog.img} alt=${dog.name}/>
+    <p>${dog.fur}</p>
+    <p>${dog.puppy ? 'PUPPY' : ''}</p>
     </div>`
   })
 }
 
-const filterDogs = () => {
-  const filterValue = filterDropdown.value
-
-  if (filterValue === 'all') {
-    loadDogs(DOGS)
-  } else {
-    const filteredArray = DOGS.filter(dog => dog.fur.toLowerCase() === filterValue.toLowerCase())
-    loadDogs(filteredArray)
-  }
-
-}
-
 loadDogs(DOGS)
 
-// brownBtn.addEventListener('click', () => filterDogs('brown'))
-// blackBtn.addEventListener('click', () => filterDogs('black'))
-filterDropdown.addEventListener('change', filterDogs)
+
+
+
+
+
+
+
+
+
+
+
+// const brownBtn = document.getElementById('brown-btn')
+// const blackBtn = document.getElementById('black-btn')
+// const filterDropdown = document.getElementById('filterDropdown')
+
+// const loadDogs = (dogsArray) => {
+//   container.innerHTML = '' //resets the container before we load the dogs
+
+//   dogsArray.forEach(dog => {
+//     container.innerHTML += `<div class="card">
+//       <p>${dog.name}</p>
+//       <img src=${dog.img} alt=${dog.name} />
+//       <p>${dog.fur}</p>
+//       <p>${dog.puppy ? '🐶' : ''}</p>
+//     </div>`
+//   })
+// }
+
+// const filterDogs = () => {
+//   const filterValue = filterDropdown.value
+
+//   if (filterValue === 'all') {
+//     loadDogs(DOGS)
+//   } else {
+//     const filteredArray = DOGS.filter(dog => dog.fur.toLowerCase() === filterValue.toLowerCase())
+//     loadDogs(filteredArray)
+//   }
+
+// }
+
+// loadDogs(DOGS)
+
+// // brownBtn.addEventListener('click', () => filterDogs('brown'))
+// // blackBtn.addEventListener('click', () => filterDogs('black'))
+// filterDropdown.addEventListener('change', filterDogs)
