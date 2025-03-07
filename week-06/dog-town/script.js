@@ -46,6 +46,7 @@ const DOGS = [
 const container = document.getElementById('container')
 
 const loadDogs = (dogsArray) => {
+  container.innerHTML = '' //resets the container before we load the dogs
   dogsArray.forEach(dog => {
     container.innerHTML +=
       `<div class="card">
@@ -57,8 +58,14 @@ const loadDogs = (dogsArray) => {
   })
 }
 
-loadDogs(DOGS)
+const filterDogs = () => {
+  const filteredArray = DOGS.filter(dog => dog.fur === 'black')
+  console.log('These are my black dogs;', filteredArray)
+  loadDogs(filteredArray)
+}
 
+loadDogs(DOGS)
+filterDogs()
 
 
 
