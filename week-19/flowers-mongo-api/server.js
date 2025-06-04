@@ -29,7 +29,7 @@ const flowerSchema = new mongoose.Schema({
   symbolism: [String],
   lastSpottedTimestamp: {
     type: Date,
-    default: Date.now
+    default: Date.now // Automatically set to current date and time
   }
 })
 
@@ -99,7 +99,7 @@ app.get("/flowers/:id", async (req, res) => {
     const flower = await Flower.findById(id)
 
     if (!flower) {
-      res.status(404).json({ 
+      res.status(404).json({
         success: false,
         response: null,
         message: "Flower not found"
@@ -113,11 +113,31 @@ app.get("/flowers/:id", async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      response: error, 
+      response: error,
       message: "Flower couldn't be found"
     })
   }
 })
+
+app.post("/flowers", async (req, res) => {
+  const { name, color } = req.body
+  try {
+    const newFlower = await new Flower({ name, color }).save()
+    res.status(201).json({
+      success: true,
+      response: newFlower,
+      message: "Flower created successfully"
+    })
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      response: error, // be careful when returning error message to the client, so that you don't expose sensitive information
+      message: "Failed to create flower"
+    })
+  }
+})
+
+
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
