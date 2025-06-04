@@ -1,0 +1,487 @@
+[
+  {
+    "id": 1,
+    "name": "Rose",
+    "scientificName": "Rosa rubiginosa",
+    "botanicalFamily": "Rosaceae",
+    "color": "Red",
+    "isSpotted": true,
+    "scent": "Sweet",
+    "size": "Medium",
+    "symbolism": [
+      "Love",
+      "Passion",
+      "Beauty"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T10:15:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Tulip",
+    "scientificName": "Tulipa gesneriana",
+    "botanicalFamily": "Liliaceae",
+    "color": "Yellow",
+    "isSpotted": false,
+    "scent": "Mild",
+    "size": "Medium",
+    "symbolism": [
+      "Perfect Love",
+      "Fame",
+      "Declaration of Love"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 3,
+    "name": "Daisy",
+    "scientificName": "Bellis perennis",
+    "botanicalFamily": "Asteraceae",
+    "color": "White",
+    "isSpotted": true,
+    "scent": "Slightly Sweet",
+    "size": "Small",
+    "symbolism": [
+      "Innocence",
+      "Purity",
+      "New Beginnings"
+    ],
+    "lastSpottedTimestamp": "2025-05-25T14:30:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Sunflower",
+    "scientificName": "Helianthus annuus",
+    "botanicalFamily": "Asteraceae",
+    "color": "Yellow",
+    "isSpotted": true,
+    "scent": "Earthy",
+    "size": "Large",
+    "symbolism": [
+      "Adoration",
+      "Loyalty",
+      "Longevity"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T18:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Lily",
+    "scientificName": "Lilium candidum",
+    "botanicalFamily": "Liliaceae",
+    "color": "White",
+    "isSpotted": false,
+    "scent": "Strongly Sweet",
+    "size": "Large",
+    "symbolism": [
+      "Purity",
+      "Majesty",
+      "Wealth"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 6,
+    "name": "Orchid",
+    "scientificName": "Phalaenopsis amabilis",
+    "botanicalFamily": "Orchidaceae",
+    "color": "Purple",
+    "isSpotted": true,
+    "scent": "Delicate",
+    "size": "Medium",
+    "symbolism": [
+      "Luxury",
+      "Beauty",
+      "Strength",
+      "Love"
+    ],
+    "lastSpottedTimestamp": "2025-05-24T11:00:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Carnation",
+    "scientificName": "Dianthus caryophyllus",
+    "botanicalFamily": "Caryophyllaceae",
+    "color": "Pink",
+    "isSpotted": false,
+    "scent": "Spicy",
+    "size": "Medium",
+    "symbolism": [
+      "Love (general)",
+      "Fascination",
+      "Distinction"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 8,
+    "name": "Daffodil",
+    "scientificName": "Narcissus pseudonarcissus",
+    "botanicalFamily": "Amaryllidaceae",
+    "color": "Yellow",
+    "isSpotted": true,
+    "scent": "Sweet",
+    "size": "Medium",
+    "symbolism": [
+      "Rebirth",
+      "New Beginnings",
+      "Unrequited Love"
+    ],
+    "lastSpottedTimestamp": "2025-05-23T09:45:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Peony",
+    "scientificName": "Paeonia lactiflora",
+    "botanicalFamily": "Paeoniaceae",
+    "color": "Pink",
+    "isSpotted": true,
+    "scent": "Rosy",
+    "size": "Large",
+    "symbolism": [
+      "Romance",
+      "Prosperity",
+      "Good Fortune",
+      "Honor"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T12:00:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Marigold",
+    "scientificName": "Tagetes erecta",
+    "botanicalFamily": "Asteraceae",
+    "color": "Orange",
+    "isSpotted": false,
+    "scent": "Pungent",
+    "size": "Medium",
+    "symbolism": [
+      "Despair (historically)",
+      "Grief",
+      "Creativity",
+      "Passion"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 11,
+    "name": "Lavender",
+    "scientificName": "Lavandula angustifolia",
+    "botanicalFamily": "Lamiaceae",
+    "color": "Purple",
+    "isSpotted": true,
+    "scent": "Sweet",
+    "size": "Medium",
+    "symbolism": [
+      "Purity",
+      "Silence",
+      "Devotion",
+      "Calmness"
+    ],
+    "lastSpottedTimestamp": "2025-05-25T08:30:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Poppy",
+    "scientificName": "Papaver rhoeas",
+    "botanicalFamily": "Papaveraceae",
+    "color": "Red",
+    "isSpotted": true,
+    "scent": "Slight",
+    "size": "Medium",
+    "symbolism": [
+      "Remembrance",
+      "Sleep",
+      "Peace"
+    ],
+    "lastSpottedTimestamp": "2025-05-22T17:00:00Z"
+  },
+  {
+    "id": 13,
+    "name": "Iris",
+    "scientificName": "Iris germanica",
+    "botanicalFamily": "Iridaceae",
+    "color": "Blue",
+    "isSpotted": false,
+    "scent": "Grape-like",
+    "size": "Large",
+    "symbolism": [
+      "Faith",
+      "Hope",
+      "Wisdom",
+      "Valor"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 14,
+    "name": "Snapdragon",
+    "scientificName": "Antirrhinum majus",
+    "botanicalFamily": "Plantaginaceae",
+    "color": "Pink",
+    "isSpotted": true,
+    "scent": "Mildly Sweet",
+    "size": "Medium",
+    "symbolism": [
+      "Graciousness",
+      "Strength",
+      "Deception"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T09:00:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Zinnia",
+    "scientificName": "Zinnia elegans",
+    "botanicalFamily": "Asteraceae",
+    "color": "Orange",
+    "isSpotted": true,
+    "scent": "None",
+    "size": "Medium",
+    "symbolism": [
+      "Thoughts of friends",
+      "Endurance",
+      "Lasting affection"
+    ],
+    "lastSpottedTimestamp": "2025-05-24T16:20:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Chrysanthemum",
+    "scientificName": "Chrysanthemum morifolium",
+    "botanicalFamily": "Asteraceae",
+    "color": "Yellow",
+    "isSpotted": false,
+    "scent": "Earthy",
+    "size": "Medium",
+    "symbolism": [
+      "Joy",
+      "Optimism",
+      "Longevity"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 17,
+    "name": "Geranium",
+    "scientificName": "Pelargonium hortorum",
+    "botanicalFamily": "Geraniaceae",
+    "color": "Red",
+    "isSpotted": true,
+    "scent": "Varied",
+    "size": "Medium",
+    "symbolism": [
+      "Comfort",
+      "Gentility"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T11:00:00Z"
+  },
+  {
+    "id": 18,
+    "name": "Begonia",
+    "scientificName": "Begonia semperflorens",
+    "botanicalFamily": "Begoniaceae",
+    "color": "Pink",
+    "isSpotted": false,
+    "scent": "None",
+    "size": "Small",
+    "symbolism": [
+      "Beware",
+      "Dark thoughts",
+      "Gratitude"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 19,
+    "name": "Petunia",
+    "scientificName": "Petunia x hybrida",
+    "botanicalFamily": "Solanaceae",
+    "color": "Purple",
+    "isSpotted": true,
+    "scent": "Sweet",
+    "size": "Small",
+    "symbolism": [
+      "Resentment",
+      "Anger",
+      "Your presence soothes me"
+    ],
+    "lastSpottedTimestamp": "2025-05-25T21:00:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Pansy",
+    "scientificName": "Viola tricolor var. hortensis",
+    "botanicalFamily": "Violaceae",
+    "color": "Yellow",
+    "isSpotted": true,
+    "scent": "Delicate",
+    "size": "Small",
+    "symbolism": [
+      "Loving thoughts",
+      "Remembrance",
+      "Free-thinking"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T15:10:00Z"
+  },
+  {
+    "id": 21,
+    "name": "Forget-Me-Not",
+    "scientificName": "Myosotis sylvatica",
+    "botanicalFamily": "Boraginaceae",
+    "color": "Blue",
+    "isSpotted": true,
+    "scent": "None",
+    "size": "Small",
+    "symbolism": [
+      "True love",
+      "Remembrance",
+      "Faithfulness"
+    ],
+    "lastSpottedTimestamp": "2025-05-23T10:00:00Z"
+  },
+  {
+    "id": 22,
+    "name": "Bluebell",
+    "scientificName": "Hyacinthoides non-scripta",
+    "botanicalFamily": "Asparagaceae",
+    "color": "Blue-Violet",
+    "isSpotted": false,
+    "scent": "Sweet",
+    "size": "Small",
+    "symbolism": [
+      "Humility",
+      "Gratitude",
+      "Everlasting love"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 23,
+    "name": "Crocus",
+    "scientificName": "Crocus vernus",
+    "botanicalFamily": "Iridaceae",
+    "color": "Purple",
+    "isSpotted": true,
+    "scent": "Slightly Sweet",
+    "size": "Small",
+    "symbolism": [
+      "Youthful gladness",
+      "Cheerfulness"
+    ],
+    "lastSpottedTimestamp": "2025-03-10T12:00:00Z"
+  },
+  {
+    "id": 24,
+    "name": "Snowdrop",
+    "scientificName": "Galanthus nivalis",
+    "botanicalFamily": "Amaryllidaceae",
+    "color": "White",
+    "isSpotted": false,
+    "scent": "Mildly Sweet",
+    "size": "Small",
+    "symbolism": [
+      "Hope",
+      "Purity",
+      "Consolation",
+      "Rebirth"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 25,
+    "name": "Hibiscus",
+    "scientificName": "Hibiscus rosa-sinensis",
+    "botanicalFamily": "Malvaceae",
+    "color": "Red",
+    "isSpotted": true,
+    "scent": "None",
+    "size": "Large",
+    "symbolism": [
+      "Delicate beauty",
+      "Consumed by love"
+    ],
+    "lastSpottedTimestamp": "2025-05-20T14:00:00Z"
+  },
+  {
+    "id": 26,
+    "name": "Jasmine",
+    "scientificName": "Jasminum officinale",
+    "botanicalFamily": "Oleaceae",
+    "color": "White",
+    "isSpotted": true,
+    "scent": "Strongly Sweet",
+    "size": "Medium",
+    "symbolism": [
+      "Love",
+      "Beauty",
+      "Sensuality",
+      "Grace"
+    ],
+    "lastSpottedTimestamp": "2025-05-26T20:30:00Z"
+  },
+  {
+    "id": 27,
+    "name": "Lilac",
+    "scientificName": "Syringa vulgaris",
+    "botanicalFamily": "Oleaceae",
+    "color": "Purple",
+    "isSpotted": false,
+    "scent": "Strongly Sweet",
+    "size": "Large",
+    "symbolism": [
+      "First emotions of love",
+      "Innocence",
+      "Confidence"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 28,
+    "name": "Magnolia",
+    "scientificName": "Magnolia grandiflora",
+    "botanicalFamily": "Magnoliaceae",
+    "color": "White",
+    "isSpotted": true,
+    "scent": "Sweet",
+    "size": "Large",
+    "symbolism": [
+      "Dignity",
+      "Nobility",
+      "Perseverance"
+    ],
+    "lastSpottedTimestamp": "2025-04-30T11:30:00Z"
+  },
+  {
+    "id": 29,
+    "name": "Camellia",
+    "scientificName": "Camellia japonica",
+    "botanicalFamily": "Theaceae",
+    "color": "Pink",
+    "isSpotted": false,
+    "scent": "Slight",
+    "size": "Medium",
+    "symbolism": [
+      "Admiration",
+      "Perfection",
+      "Faithfulness"
+    ],
+    "lastSpottedTimestamp": null
+  },
+  {
+    "id": 30,
+    "name": "Gardenia",
+    "scientificName": "Gardenia jasminoides",
+    "botanicalFamily": "Rubiaceae",
+    "color": "White",
+    "isSpotted": true,
+    "scent": "Strongly Sweet",
+    "size": "Medium",
+    "symbolism": [
+      "Purity",
+      "Sweet love",
+      "Joy",
+      "You're lovely"
+    ],
+    "lastSpottedTimestamp": "2025-05-22T19:45:00Z"
+  }
+]
