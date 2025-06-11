@@ -2,6 +2,7 @@ import cors from "cors"
 import express from "express"
 import listEndpoints from "express-list-endpoints"
 import mongoose from "mongoose"
+import { Flower } from "./models/Flower.js"
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/flowers-database"
 mongoose.connect(mongoUrl)
@@ -12,32 +13,6 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const flowerSchema = new mongoose.Schema({
-  id: Number,
-  name: {
-    type: String,
-    required: true
-  },
-  scientificName: String,
-  botanicalFamily: String,
-  color: String,
-  isSpotted: {
-    type: Boolean,
-    default: true
-  },
-  scent: String,
-  size: {
-    type: String,
-    enum: ["Small", "Medium", "Large"]
-  },
-  symbolism: [String],
-  lastSpottedTimestamp: {
-    type: Date,
-    default: Date.now
-  }
-})
-
-const Flower = mongoose.model("Flower", flowerSchema)
 
 
 app.get("/", (req, res) => {
