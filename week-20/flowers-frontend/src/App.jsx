@@ -1,62 +1,66 @@
-import { useState, useEffect } from 'react'
-import { Container, Typography } from '@mui/material'
-import FlowerForm from './components/FlowerForm'
-import ColorFilter from './components/ColorFilter'
-import FlowerGrid from './components/FlowerGrid'
-import LoadingSpinner from './components/LoadingSpinner'
-import './App.css'
+import { useState, useEffect } from "react";
+import { Container, Typography } from "@mui/material";
+import FlowerForm from "./components/FlowerForm";
+import ColorFilter from "./components/ColorFilter";
+import FlowerGrid from "./components/FlowerGrid";
+import LoadingSpinner from "./components/LoadingSpinner";
+import LoginForm from "./components/LoginForm";
+import SignupForm from "./components/SignupForm";
+import "./App.css";
 
 function App() {
-  const [flowers, setFlowers] = useState([])
-  const [loading, setLoading] = useState(false)
-  const [colorFilter, setColorFilter] = useState('')
+  const [flowers, setFlowers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [colorFilter, setColorFilter] = useState("");
 
   // Compute filtered flowers and available colors on-the-fly
   const filteredFlowers = colorFilter
-    ? flowers.filter(flower => flower.color === colorFilter)
-    : flowers
+    ? flowers.filter((flower) => flower.color === colorFilter)
+    : flowers;
 
-  const availableColors = [...new Set(flowers.map(flower => flower.color))]
+  const availableColors = [...new Set(flowers.map((flower) => flower.color))];
 
   const fetchFlowers = () => {
-    setLoading(true)
+    setLoading(true);
     fetch("http://localhost:8080/flowers")
-      .then(response => {
+      .then((response) => {
         if (response.ok) {
-          return response.json()
+          return response.json();
         }
-        throw new Error('Network response was not ok')
+        throw new Error("Network response was not ok");
       })
-      .then(data => {
-        setFlowers(data.response)
+      .then((data) => {
+        setFlowers(data.response);
       })
-      .catch(error => {
-        console.log(error)
+      .catch((error) => {
+        console.log(error);
       })
       .finally(() => {
-        setLoading(false)
-      })
-  }
+        setLoading(false);
+      });
+  };
 
   useEffect(() => {
-    fetchFlowers()
-  }, [])
+    fetchFlowers();
+  }, []);
 
   const handleColorFilterChange = (event) => {
-    setColorFilter(event.target.value)
-  }
+    setColorFilter(event.target.value);
+  };
 
   const handleFlowerAdded = () => {
     // Refresh the flower list when a new flower is added
-    fetchFlowers()
-  }
+    fetchFlowers();
+  };
 
   if (loading && flowers.length === 0) {
-    return <LoadingSpinner />
+    return <LoadingSpinner />;
   }
 
   return (
     <Container>
+      <LoginForm />
+      <SignupForm />
       <Typography variant="h3">Flower Power!</Typography>
 
       <FlowerForm onFlowerAdded={handleFlowerAdded} loading={loading} />
@@ -69,7 +73,7 @@ function App() {
 
       <FlowerGrid flowers={filteredFlowers} colorFilter={colorFilter} />
     </Container>
-  )
+  );
 }
 
-export default App
+export default App;

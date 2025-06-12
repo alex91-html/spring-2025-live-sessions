@@ -1,5 +1,6 @@
 import { Card, CardContent, Typography, Box, Chip } from '@mui/material'
 import { getSizeChipColor } from '../utils/flowerUtils'
+import { EditButton } from './EditButton'
 
 const styles = {
   card: {
@@ -41,6 +42,7 @@ const FlowerCard = ({ flower }) => {
         <Typography variant="h6" component="h3" gutterBottom>
           {flower.name}
         </Typography>
+        <EditButton id={flower.id}/>
         <Box sx={styles.chipContainer}>
           <Chip
             label={flower.color}
